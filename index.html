@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Château de la Napoule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#accueil"><img src="https://i.ibb.co/JccgL4T/chateau-napoule-logo-blanc.png" alt="Château de la Napoule Logo"></a>
+        </div>
+        <div class="burger">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <div class="nav-links">
+            <a href="#apropos">À propos</a>
+            <a href="#galerie">Galerie 360°</a>
+            <a href="#actualite">Actualités</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <h1>Bienvenue sur notre site</h1>
+            <h2>Découvrez le château</h2>
+        </section>
+
+        <section id="apropos" class="section">
+            <div class="rectangle"></div>
+            <div class="bloc">
+                <h3>À propos</h3>
+                <h4>Le château de la Napoule</h4>
+                <div class="image1">
+                    <img src="https://i.ibb.co/mFx9NTJ/364292-Chateau-De-La-Napoule.jpg" alt="Château De La Napoule">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit libero labore non culpa id ratione in sunt quibusdam vitae ex sapiente atque, natus debitis assumenda nisi ut ducimus deserunt pariatur distinctio tempore. Voluptatem, magni nisi repellat recusandae consectetur eius deleniti maiores quasi fugit unde minus asperiores, molestiae dolores doloremque odit veniam quidem reprehenderit qui magnam culpa? Culpa architecto reiciendis quidem dolorum vel illum eum, nulla vero. Delectus illo dignissimos itaque vel aperiam soluta, mollitia obcaecati, ipsa quis omnis aut deserunt nobis tenetur. Non molestias sequi dolor obcaecati, architecto officia accusamus officiis, laboriosam quibusdam qui aliquid in nemo perspiciatis ab?
+                </div>
+            </div>
+        </section>
+
+        <section id="galerie" class="section2">
+            <h3>Galerie 360°</h3>
+            <h4>Vivez une expérience immersive unique</h4>
+            <div class="test">
+                <div class="card" onclick="openPopup('popup1', 'Côté mer', 'https://i.ibb.co/8Nsvd7W/moustachesenvadrouille-sabinekley-voyage-france-mandelieu-napoule-chateau-clews-tour-mancha-vue.jpg')">
+                    <img src="https://i.ibb.co/8Nsvd7W/moustachesenvadrouille-sabinekley-voyage-france-mandelieu-napoule-chateau-clews-tour-mancha-vue.jpg" alt="Côté mer">
+                    <div class="label">Côté mer</div>
+                </div>
+                <div class="card" onclick="openPopup('popup2', 'Jardin', 'https://i.ibb.co/PtW0LnZ/event.jpg')">
+                    <img src="https://i.ibb.co/PtW0LnZ/event.jpg" alt="Jardin">
+                    <div class="label2">Jardin</div>
+                </div>
+                <div class="card" onclick="openPopup('popup3', 'Côté ville', 'https://i.ibb.co/ZxKhfZV/1200x680-sc-024-4469322.jpg')">
+                    <img src="https://i.ibb.co/ZxKhfZV/1200x680-sc-024-4469322.jpg" alt="Côté ville">
+                    <div class="label">Côté ville</div>
+                </div>
+                <div class="card" onclick="openPopup('popup4', 'L\'intérieur', 'https://i.ibb.co/mcH8vYn/lanapoule11-JPG-nggid045011-ngg0dyn-1024x0x100-00f0w010c010r110f110r010t010.jpg')">
+                    <img src="https://i.ibb.co/mcH8vYn/lanapoule11-JPG-nggid045011-ngg0dyn-1024x0x100-00f0w010c010r110f110r010t010.jpg" alt="L'intérieur">
+                    <div class="label2">L'intérieur</div>
+                </div>
+            </div>
+        </section>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h3 id="popup-title"></h3>
+                <img id="popup-img" src="" alt="Image">
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere vel, labore ea praesentium earum rerum, reiciendis illum eveniet repellendus qui, deleniti consequatur exercitationem nemo quae itaque molestiae iure nesciunt asperiores quas neque expedita. Tempora accusamus quis dolorum? Soluta, obcaecati? Explicabo ab recusandae accusamus nobis, ipsam quaerat quos dolorem minus reiciendis.</p>
+            </div>
+        </div>
+
+        <section id="actualite" class="section3">
+            <div class="actualite-header">
+                <div class="background-box"></div>
+                <h3>Actualités</h3>
+                <h4>Ne ratez rien !</h4>
+            </div>
+            <div class="actualite-container">
+                <div class="actualite-list">
+                    <div class="card2" onclick="updateDetails('https://i.ibb.co/Dpntx48/Mandelieu-002110-BD-scaled.jpg', '28 février 2025', 'Titre actualité 1')">
+                        <img src="https://i.ibb.co/Dpntx48/Mandelieu-002110-BD-scaled.jpg" alt="Mandelieu">
+                        <div class="text-content">
+                            <div class="label3">29 février 2025</div>
+                            <div class="label4">Titre actualité 1</div>
+                        </div>
+                        <span class="arrow">➝</span>
+                    </div>
+                    <div class="card2" onclick="updateDetails('https://i.ibb.co/j0Z0wyN/chateau-la-napoule.jpg', '29 février 2025', 'Titre actualité 2')">
+                        <img src="https://i.ibb.co/j0Z0wyN/chateau-la-napoule.jpg" alt="Château">
+                        <div class="text-content">
+                            <div class="label3">29 février 2025</div>
+                            <div class="label4">Titre actualité 2</div>
+                        </div>
+                        <span class="arrow">➝</span>
+                    </div>
+                    <div class="card2" onclick="updateDetails('https://i.ibb.co/ZxKhfZV/1200x680-sc-024-4469322.jpg', '29 février 2025', 'Titre actualité 3')">
+                        <img src="https://i.ibb.co/ZxKhfZV/1200x680-sc-024-4469322.jpg" alt="Paysage">
+                        <div class="text-content">
+                            <div class="label3">29 février 2025</div>
+                            <div class="label4">Titre actualité 3</div>
+                        </div>
+                        <span class="arrow">➝</span>
+                    </div>
+                </div>
+                <div class="actualite-detail">
+                    <img id="detail-img" src="https://i.ibb.co/Dpntx48/Mandelieu-002110-BD-scaled.jpg" alt="Grande image">
+                    <div id="detail-label3" class="label3">29 février 2025</div>
+                    <div id="detail-label4" class="label4">Titre actualité 1</div>
+                    <p>ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section2">
+            <h3>Contact</h3>
+            <h4>Pour plus d'informations</h4>
+        </section>
+
+        <section class="contact-section">
+            <form class="contact-form">
+                <div class="left-form">
+                    <input type="text" placeholder="Votre nom...">
+                    <input type="email" placeholder="Votre email...">
+                    <input type="text" placeholder="Objet de votre demande...">
+                </div>
+                <div class="right-form">
+                    <textarea placeholder="Description de votre demande..."></textarea>
+                    <button type="submit">ENVOYER</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="section2">
+        <div class="footer">
+            <div class="footer-logo">
+                <a href="#accueil"><img src="https://i.ibb.co/JccgL4T/chateau-napoule-logo-blanc.png" alt="Château de la Napoule Logo"></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#" aria-label="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn" width="24"></a></li>
+                    <li><a href="https://www.instagram.com/la_napoule_artfoundation" target="_blank" aria-label="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Instagram" width="24"></a></li>
+                    <li><a href="https://www.facebook.com/chateau.delanapoule/" target="_blank" aria-label="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook" width="24"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-img">
+            <div class="footer-background"></div>
+            <div class="footer-img-text">
+                <div class="footer-img-gauche">
+                    <p>Adresse</p>
+                    <p>Numéro de téléphone</p>
+                </div>
+                <div class="footer-img-droite">
+                    <p>© Le Château De La Napoule</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
