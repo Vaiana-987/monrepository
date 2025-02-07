@@ -1,18 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Château de la Napoule</title>
+    <meta http-equiv="Permissions-Policy" content="accelerometer=*, gyroscope=*, magnetometer=*, deviceorientation=*">
+    <title>Château la Napoule</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Lien vers le fichier CSS -->
     <link rel="stylesheet" href="style.css">
-    <script src="java.js" defer></script>
+
+    <!-- FontAwesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="#accueil"><img src="https://i.ibb.co/JccgL4T/chateau-napoule-logo-blanc.png" alt="Château de la Napoule Logo"></a>
+            <a href="#accueil"><img src="link/Images/chateau_napoule_logo_blanc.png" alt="Château de la Napoule Logo"></a>
         </div>
         <div class="burger">
             <div class="burger-line"></div>
@@ -39,8 +44,19 @@
                 <h3>À propos</h3>
                 <h4>Le château de la Napoule</h4>
                 <div class="image1">
-                    <img src="https://i.ibb.co/mFx9NTJ/364292-Chateau-De-La-Napoule.jpg" alt="Château De La Napoule">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit libero labore non culpa id ratione in sunt quibusdam vitae ex sapiente atque, natus debitis assumenda nisi ut ducimus deserunt pariatur distinctio tempore. Voluptatem, magni nisi repellat recusandae consectetur eius deleniti maiores quasi fugit unde minus asperiores, molestiae dolores doloremque odit veniam quidem reprehenderit qui magnam culpa? Culpa architecto reiciendis quidem dolorum vel illum eum, nulla vero. Delectus illo dignissimos itaque vel aperiam soluta, mollitia obcaecati, ipsa quis omnis aut deserunt nobis tenetur. Non molestias sequi dolor obcaecati, architecto officia accusamus officiis, laboriosam quibusdam qui aliquid in nemo perspiciatis ab?
+                    <img src="link/Images/364292-Chateau-De-La-Napoule.jpg" alt="Château De La Napoule">
+                  <p>Le <b> le chateau de La Napoule </b> est une forteresse médiévale située à <b>Mandelieu-la-Napoule </b>,
+                        sur la côte azuréenne, dans le département des<b> Alpes-Maritimes</b>. Construit au <b>XIVe siècle</b>
+                        par les comtes de Villeneuve, il surplombe le bord de mer et témoigne d’un riche passé
+                        historique. <br> <br>
+                        Après plusieurs transformations et périodes d’abandon, il est restauré au début du <b>XXe
+                        siècle</b>  par le couple américain Henry et Marie Clews, qui y insufflent une nouvelle vie en y
+                        intégrant leur univers artistique. Aujourd’hui, le château et ses <b>jardins</b>, inscrits <b>monuments historiques</b>
+                         depuis <b>1947</b>, sont un site emblématique de la région. Son parc, labellisé <b>«
+                        Jardin remarquable »</b>, offre une promenade entre sculptures et paysages enchanteurs. <br> <br>
+                        Lieu de culture et de création, le château abrite aujourd’hui la <b>Fondation La Napoule</b>, qui
+                        perpétue l’héritage artistique des Clews à travers des expositions et des résidences
+                        d’artistes. </p>
                 </div>
             </div>
         </section>
@@ -49,21 +65,51 @@
             <h3>Galerie 360°</h3>
             <h4>Vivez une expérience immersive unique</h4>
             <div class="test">
-                <div class="card" onclick="openPopup('popup1', 'Côté mer', 'https://i.ibb.co/8Nsvd7W/moustachesenvadrouille-sabinekley-voyage-france-mandelieu-napoule-chateau-clews-tour-mancha-vue.jpg')">
-                    <img src="https://i.ibb.co/8Nsvd7W/moustachesenvadrouille-sabinekley-voyage-france-mandelieu-napoule-chateau-clews-tour-mancha-vue.jpg" alt="Côté mer">
+                <div class="card" onclick="openPopup('popup1', 'Côté mer', 'https://momento360.com/e/u/a3b08156266a4247aa1c586b4dbae5bd?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true')">
+                    <img src="link/Images/moustachesenvadrouille-sabinekley-voyage-france-mandelieu-napoule-chateau-clews-tour-mancha-vue.jpg" alt="Côté mer">
                     <div class="label">Côté mer</div>
+                    <p> <b>Le château de La Napoule</b> bénéficie d'une situation exceptionnelle en bord de mer, face à
+                        la baie de Cannes. Ses imposants murs se dressent directement au-dessus de la plage,
+                        offrant une vue imprenable sur la Méditerranée. <br> <br>
+                        Les terrasses du château, ombragées et confortables, permettent aux visiteurs de se
+                        restaurer tout en profitant du panorama marin. Cette proximité immédiate avec la mer fait du
+                        château de La Napoule un lieu unique où histoire, art et nature se rencontrent
+                        harmonieusement.</p>
                 </div>
-                <div class="card" onclick="openPopup('popup2', 'Jardin', 'https://i.ibb.co/PtW0LnZ/event.jpg')">
-                    <img src="https://i.ibb.co/PtW0LnZ/event.jpg" alt="Jardin">
+                <div class="card" onclick="openPopup('popup2', 'Jardin', 'https://momento360.com/e/u/325dbe642e084849a67bfa8a62f498f2?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true')">
+                    <img src="link/Images/event.jpg" alt="Jardin">
                     <div class="label2">Jardin</div>
+                    <p> Les <b>jardins du Château de La Napoule</b>, aménagés par <b>Marie Clews</b> entre 1918 et 1937,
+                        s'étendent sur <b>4 hectares</b> et complètent l'architecture néo-médiévale du château. Ils offrent
+                        une oasis de verdure et de calme, accessible en toutes saisons.<br> <br>
+                        Ces jardins alternent des aménagements à la française et des références au style anglais,
+                        agrémentés de fontaines. Une large allée centrale bordée de buis mène à divers espaces
+                        thématiques, tels que le jardin mauresque, le jardin vénitien et le jardin romain.<br> <br>
+                        Classés « Jardins Remarquables », ils abritent également des œuvres d'artistes plasticiens,
+                        offrant une promenade entre sculptures et paysages enchanteurs</p>
                 </div>
-                <div class="card" onclick="openPopup('popup3', 'Côté ville', 'https://i.ibb.co/ZxKhfZV/1200x680-sc-024-4469322.jpg')">
-                    <img src="https://i.ibb.co/ZxKhfZV/1200x680-sc-024-4469322.jpg" alt="Côté ville">
+                <div class="card" onclick="openPopup('popup3', 'Côté ville', 'https://momento360.com/e/u/f2b12ed656a042d5a0733837d71af694?utm_campaign=embed&utm_source=other&heading=-95.66&pitch=-1.56&field-of-view=75&size=medium&display-plan=true')">
+                    <img src="link/Images/1200x680_sc_024-4469322.jpg" alt="Côté ville">
                     <div class="label">Côté ville</div>
+                    <p>Restauré au début du XXᵉ siècle par le couple d'artistes américains Henry et Marie Clews, le
+                        château se trouve à proximité immédiate du village de La Napoule. Cette proximité permet
+                        aux visiteurs d'accéder facilement aux commerces, restaurants et autres commodités du
+                        village, enrichissant ainsi l'expérience culturelle et historique offerte par le château.
+                        </p>
                 </div>
-                <div class="card" onclick="openPopup('popup4', 'L\'intérieur', 'https://i.ibb.co/mcH8vYn/lanapoule11-JPG-nggid045011-ngg0dyn-1024x0x100-00f0w010c010r110f110r010t010.jpg')">
-                    <img src="https://i.ibb.co/mcH8vYn/lanapoule11-JPG-nggid045011-ngg0dyn-1024x0x100-00f0w010c010r110f110r010t010.jpg" alt="L'intérieur">
+                <div class="card" onclick="openPopup('popup4', 'L\'intérieur', 'https://momento360.com/e/u/ef3ad8ffe6cb4072bdfc100fa37141f4?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true')">
+                    <img src="link/Images/lanapoule11.JPG-nggid045011-ngg0dyn-1024x0x100-00f0w010c010r110f110r010t010.jpeg" alt="L'intérieur">
                     <div class="label2">L'intérieur</div>
+                    <p>L'intérieur du <b>Château de La Napoule</b> reflète le travail artistique du couple américain Henry
+                        et Marie Clews, qui ont restauré cette ancienne forteresse médiévale au début du XXᵉ
+                        siècle. Les salles principales, orientées vers la mer, sont ornées de sculptures et de designs
+                        uniques, témoignant de la créativité de Henry Clews. Son atelier, accessible lors des visites
+                        guidées, offre un aperçu de son processus artistique.<br> <br>
+                        Les visites guidées, sans réservation préalable, permettent de découvrir ces espaces
+                        intérieurs. Les horaires varient selon la saison, avec des visites généralement proposées en
+                        fin de matinée et l'après-midi.<br> <br>
+                        Pour une expérience complète, il est recommandé de consulter nos horaires actuels avant
+                        de planifier votre visite</p>
                 </div>
             </div>
         </section>
@@ -72,8 +118,8 @@
             <div class="popup-content">
                 <span class="close" onclick="closePopup()">&times;</span>
                 <h3 id="popup-title"></h3>
-                <img id="popup-img" src="" alt="Image">
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere vel, labore ea praesentium earum rerum, reiciendis illum eveniet repellendus qui, deleniti consequatur exercitationem nemo quae itaque molestiae iure nesciunt asperiores quas neque expedita. Tempora accusamus quis dolorum? Soluta, obcaecati? Explicabo ab recusandae accusamus nobis, ipsam quaerat quos dolorem minus reiciendis.</p>
+                <div id="popup-media"></div>
+                <p></p>
             </div>
         </div>
 
@@ -85,40 +131,60 @@
             </div>
             <div class="actualite-container">
                 <div class="actualite-list">
-                    <div class="card2" onclick="updateDetails('https://i.ibb.co/Dpntx48/Mandelieu-002110-BD-scaled.jpg', '28 février 2025', 'Titre actualité 1')">
-                        <img src="https://i.ibb.co/Dpntx48/Mandelieu-002110-BD-scaled.jpg" alt="Mandelieu">
+                    <div class="card2" onclick="updateDetails(0)">
+                        <img src="link/Images/Mandelieu_002110_BD--scaled.jpg" alt="Mandelieu">
                         <div class="text-content">
-                            <div class="label3">29 février 2025</div>
-                            <div class="label4">Titre actualité 1</div>
+                            <div class="label3">12 juillet et 19 juillet 2025</div>
+                            <div class="label4">1. Soirée cinéma en plein air dans les jardins du château</div>
                         </div>
                         <span class="arrow">➝</span>
                     </div>
-                    <div class="card2" onclick="updateDetails('https://i.ibb.co/j0Z0wyN/chateau-la-napoule.jpg', '29 février 2025', 'Titre actualité 2')">
-                        <img src="https://i.ibb.co/j0Z0wyN/chateau-la-napoule.jpg" alt="Château">
+                    <div class="card2" onclick="updateDetails(1)">
+                        <img src="link/Images/chateau la napoule.jpg" alt="Château">
                         <div class="text-content">
-                            <div class="label3">29 février 2025</div>
-                            <div class="label4">Titre actualité 2</div>
+                            <div class="label3">Tous les vendredis soirs de juin à août 2025</div>
+                            <div class="label4">2. Visites nocturnes : Le château sous un autre jour</div>
                         </div>
                         <span class="arrow">➝</span>
                     </div>
-                    <div class="card2" onclick="updateDetails('https://i.ibb.co/ZxKhfZV/1200x680-sc-024-4469322.jpg', '29 février 2025', 'Titre actualité 3')">
-                        <img src="https://i.ibb.co/ZxKhfZV/1200x680-sc-024-4469322.jpg" alt="Paysage">
+                    <div class="card2" onclick="updateDetails(2)">
+                        <img src="link/Images/1200x680_sc_024-4469322.jpg" alt="Paysage">
                         <div class="text-content">
-                            <div class="label3">29 février 2025</div>
-                            <div class="label4">Titre actualité 3</div>
+                            <div class="label3">Tous les mercredis après-midi</div>
+                            <div class="label4">3. Ateliers créatifs pour enfants : Découverte de l'art médiéval</div>
                         </div>
                         <span class="arrow">➝</span>
                     </div>
                 </div>
                 <div class="actualite-detail">
-                    <img id="detail-img" src="https://i.ibb.co/Dpntx48/Mandelieu-002110-BD-scaled.jpg" alt="Grande image">
-                    <div id="detail-label3" class="label3">29 février 2025</div>
-                    <div id="detail-label4" class="label4">Titre actualité 1</div>
-                    <p>ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum</p>
+                    <img id="detail-img" src="" alt="Grande image">
+                    <div id="detail-label3" class="label3"></div>
+                    <div id="detail-label4" class="label4"></div>
+                    <div id="detail-label5" class="label5"></div>
                 </div>
             </div>
         </section>
 
+        <section id="actualite-mobile" class="section3 mobile-only">
+            <div class="actualite-header">
+                <div class="background-box"></div>
+                <h3>Actualités</h3>
+                <h4>Ne ratez rien !</h4>
+            </div>
+            <div class="actualite-list-mobile">
+                <!-- Les cartes d'actualités seront générées dynamiquement ici -->
+            </div>
+            <div id="popup-overlay" class="popup-overlay">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <img id="popup-img" src="" alt="Image de l'actualité">
+                    <div id="popup-date" class="label3"></div>
+                    <div id="popup-title" class="label4"></div>
+                    <div id="popup-description" class="label5"></div>
+                </div>
+            </div>
+        </section>
+        
         <section id="contact" class="section2">
             <h3>Contact</h3>
             <h4>Pour plus d'informations</h4>
@@ -142,7 +208,7 @@
     <footer class="section2">
         <div class="footer">
             <div class="footer-logo">
-                <a href="#accueil"><img src="https://i.ibb.co/JccgL4T/chateau-napoule-logo-blanc.png" alt="Château de la Napoule Logo"></a>
+                <a href="#accueil"><img src="link/Images/chateau_napoule_logo_blanc.png" alt="Château de la Napoule Logo"></a>
             </div>
             <div class="footer-nav">
                 <ul>
@@ -165,5 +231,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/three.min.js"></script>
+
+    <!-- Chargement du fichier JavaScript principal -->
+    <script src="java.js" defer></script>
 </body>
 </html>
