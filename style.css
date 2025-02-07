@@ -14,6 +14,7 @@ body {
   margin: 0;
   font-size: 16px;
   background-color: white;
+  line-height: 1.5;
 }
 
 header {
@@ -87,7 +88,7 @@ header {
 }
 
 #accueil {
-  background-image: url('https://i.ibb.co/Dpntx48/Mandelieu-002110-BD-scaled.jpg');
+  background-image: url('link/Images/Mandelieu_002110_BD--scaled.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -326,7 +327,7 @@ h4 {
 }
 
 .label4 {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: bold;
 }
 
@@ -366,7 +367,7 @@ h4 {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .actualite-detail .label3 {
@@ -376,10 +377,21 @@ h4 {
 .actualite-detail .label4 {
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .actualite-detail p {
   line-height: 1.5;
+}
+
+.font-regular{
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.font-light{
+  text-align: justify;
 }
 
 .contact-section {
@@ -502,7 +514,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url('https://i.ibb.co/Dpntx48/Mandelieu-002110-BD-scaled.jpg');
+  background-image: url('link/Images/Mandelieu_002110_BD--scaled.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -541,6 +553,82 @@ button:hover {
 
 #actualite {
   scroll-margin-top: 100px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 885px) {
+  .mobile-only {
+      display: block;
+  }
+  
+  #actualite:not(.mobile-only) {
+      display: none;
+  }
+  
+  .actualite-list-mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+  }
+  
+  .card2-mobile {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      padding: 10px;
+      cursor: pointer;
+  }
+  
+  .card2-mobile img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+  }
+  
+  .card2-mobile .text-content {
+      padding: 0.5rem;
+      flex-grow: 1;
+  }
+  
+  .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+  }
+  
+  .popup-content {
+      position: relative;
+      background-color: #fff;
+      padding: 20px;
+      max-width: 500px;
+      overflow-y: auto;
+  }
+  
+  .close-popup {
+      position: absolute;
+      top: 0;
+      right: 30px;
+      font-size: 70px;
+      cursor: pointer;
+  }
+  
+  #popup-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+  }
 }
 
 @media  screen and (max-width: 885px) {
@@ -655,8 +743,12 @@ button:hover {
       object-fit: cover;
     }
 
-    .label3, .label4{
+    .label3 {
       font-size: 15px;
+    }
+
+    .label4 {
+      font-size: 13px;
     }
 
     .contact-section{
@@ -747,7 +839,7 @@ button:hover {
     }
     .popup-content img{
       width: 100%;
-      height: 40%;
+      height: 30%
     }
     .popup-content p{
       font-size: 12px;
