@@ -130,7 +130,7 @@ const actualites = [
         `
     },
     {
-        image: "link/Images/chateau la napoule.jpg",
+        image: "link/Images/chateau_la_napoule.jpg",
         date: "Tous les vendredis soirs de juin à août 2025",
         title: "2. Visites nocturnes : Le château sous un autre jour",
         description: `Découvrez le Château de la Napoule dans une ambiance magique grâce à nos visites nocturnes. Plongés dans une atmosphère féerique, les visiteurs pourront explorer les salles et jardins éclairés par des bougies, tout en écoutant des récits historiques et des légendes locales.
