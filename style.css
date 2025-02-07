@@ -24,6 +24,7 @@ header {
   padding: 20px 200px;
   background-color: #074259;
   position: sticky;
+  width: 100%;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -88,7 +89,7 @@ header {
 }
 
 #accueil {
-  background-image: url('link/Images/Mandelieu_002110_BD--scaled.jpg');
+  background-image: url('link/Images/Mandelieu_002110_BD--scaled.webp');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -514,7 +515,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url('link/Images/Mandelieu_002110_BD--scaled.jpg');
+  background-image: url('link/Images/Mandelieu_002110_BD--scaled.webp');
   background-size: cover;
   background-position: center;
   width: 100%;
