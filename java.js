@@ -119,7 +119,7 @@ function closePopup() {
 
 const actualites = [
     {
-        image: "link/Images/Mandelieu_002110_BD--scaled.jpg",
+        image: "link/Images/Mandelieu_002110_BD--scaled.webp",
         date: "12 juillet et 19 juillet 2025",
         title: "1. Soirée cinéma en plein air dans les jardins du château",
         description: `Venez vivre une expérience unique avec nos soirées cinéma en plein air ! Le Château de la Napoule projette des classiques du cinéma sous les étoiles, dans un cadre enchanteur. Les spectateurs pourront également profiter de stands de snacks et boissons.
@@ -130,7 +130,7 @@ const actualites = [
         `
     },
     {
-        image: "link/Images/chateau_la_napoule.jpg",
+        image: "link/Images/chateau_la_napoule.webp",
         date: "Tous les vendredis soirs de juin à août 2025",
         title: "2. Visites nocturnes : Le château sous un autre jour",
         description: `Découvrez le Château de la Napoule dans une ambiance magique grâce à nos visites nocturnes. Plongés dans une atmosphère féerique, les visiteurs pourront explorer les salles et jardins éclairés par des bougies, tout en écoutant des récits historiques et des légendes locales.
@@ -141,7 +141,7 @@ const actualites = [
         `
     },
     {
-        image: "link/Images/1200x680_sc_024-4469322.jpg",
+        image: "link/Images/1200x680_sc_024-4469322.webp",
         date: "Tous les mercredis après-midi",
         title: "3. Ateliers créatifs pour enfants : Découverte de l'art médiéval",
         description: `Le Château propose des ateliers pédagogiques et ludiques pour les enfants. Au programme : initiation à l'enluminure, création de blasons et découverte des techniques artistiques du Moyen Âge. Ces ateliers sont encadrés par des artistes et historiens spécialisés.
