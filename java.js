@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const actualite = actualites[index];
         document.getElementById('popup-img').src = actualite.image;
         document.getElementById('popup-date').textContent = actualite.date;
-        document.getElementById('popup-title').textContent = actualite.title;
+        document.getElementById('popup-title2').textContent = actualite.title;
         document.getElementById('popup-description').textContent = actualite.description;
         
         // Ajout des classes pour la personnalisation de la typographie
-        document.getElementById('popup-title').className = 'font-bold text-xl';
+        document.getElementById('popup-title2').className = 'font-bold text-xl';
         document.getElementById('popup-date').className = 'font-regular text-md';
         document.getElementById('popup-description').className = 'font-light text-sm';
         
