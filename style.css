@@ -593,7 +593,7 @@ button:hover {
   }
 
 
-  #actualites:not(.mobile-only) {
+  .actualite-ordi:not(.mobile-only) {
       display: none;
   }
   

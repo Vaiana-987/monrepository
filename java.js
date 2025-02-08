@@ -2,14 +2,6 @@ console.log("Le fichier java.js est bien chargé !");
 
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Le DOM est complètement chargé !");
-    
-    // Appliquer ?v=1.1 aux images pour forcer la mise à jour du cache
-    document.querySelectorAll("img").forEach(img => {
-        const src = img.getAttribute("src");
-        if (src && !src.includes("?v=")) { // Vérifie pour éviter de dupliquer
-            img.setAttribute("src", src + "?v=1.1");
-        }
-    });
 });
 
 // Test pour voir si Three.js est bien chargé
@@ -57,9 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links a');
+
+    
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('active');
@@ -73,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             burger.classList.remove('active');
         });
     });
-
+    
 function openPopup(id, title, mediaUrl) {
     const popup = document.getElementById("popup");
     const popupTitle = document.getElementById("popup-title");
