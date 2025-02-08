@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Test pour voir si Three.js est bien chargé
-if (THREE) {
+if (typeof THREE !== "undefined") {
     console.log("Three.js est bien chargé !");
 } else {
     console.error("Erreur : Three.js ne semble pas être chargé correctement.");
 }
 
-// Autre test si tu veux vérifier si un élément spécifique existe dans la page
+// Autre test si un élément spécifique existe dans la page
 if (document.querySelector("h1")) {
     console.log("Le titre H1 est bien présent dans la page.");
 } else {
@@ -40,15 +40,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function showPopup(index) {
         const actualite = actualites[index];
-        document.getElementById('popup-img').src = actualite.image;
-        document.getElementById('popup-date').textContent = actualite.date;
-        document.getElementById('popup-title2').textContent = actualite.title;
-        document.getElementById('popup-description').textContent = actualite.description;
+        const popupImg = document.getElementById("popup-img");
+
+        // Désactiver lazy loading pour cette image spécifique
+        popupImg.removeAttribute("loading");
         
-        // Ajout des classes pour la personnalisation de la typographie
-        document.getElementById('popup-title2').className = 'font-bold text-xl';
-        document.getElementById('popup-date').className = 'font-regular text-md';
-        document.getElementById('popup-description').className = 'font-light text-sm';
+        setTimeout(() => {
+            popupImg.src = actualite.image;
+        }, 100);
+
+        document.getElementById("popup-date").textContent = actualite.date;
+        document.getElementById("popup-title2").textContent = actualite.title;
+        document.getElementById("popup-description").textContent = actualite.description;
         
         popupOverlay.style.display = 'block';
     }
@@ -64,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links a');
@@ -75,7 +76,6 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('active');
 });
 
-
 function openPopup(id, title, mediaUrl) {
     const popup = document.getElementById("popup");
     const popupTitle = document.getElementById("popup-title");
@@ -83,25 +83,16 @@ function openPopup(id, title, mediaUrl) {
     const popupMedia = document.getElementById("popup-media");
 
     popupTitle.innerText = title;
-
-    // Déterminer les dimensions en fonction de la largeur de l'écran
-    let mediaWidth, mediaHeight;
-    if (window.innerWidth <= 885) { // Mobile
-        mediaWidth = "100%%";
-        mediaHeight = "200px";
-    } else { // Desktop
-        mediaWidth = "60%";
-        mediaHeight = "500px";
-    }
-
-    // Vérifier si c'est une image ou une iframe
+    
+    let mediaWidth = window.innerWidth <= 885 ? "100%" : "60%";
+    let mediaHeight = window.innerWidth <= 885 ? "200px" : "500px";
+    
     if (mediaUrl.includes("momento360.com")) {
         popupMedia.innerHTML = `<iframe src="${mediaUrl}" width="${mediaWidth}" height="${mediaHeight}" frameborder="0" allowfullscreen></iframe>`;
     } else {
         popupMedia.innerHTML = `<img src="${mediaUrl}" alt="${title}" style="width: ${mediaWidth}; max-height: ${mediaHeight}; object-fit: contain;">`;
     }
 
-    // Trouver le contenu correspondant dans la section galerie
     const card = document.querySelector(`.card[onclick*="${id}"]`);
     if (card) {
         const cardContent = card.querySelector("p").innerHTML;
@@ -115,43 +106,7 @@ function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
 
-
-
-const actualites = [
-    {
-        image: "link/Images/Mandelieu_002110_BD--scaled.webp",
-        date: "12 juillet et 19 juillet 2025",
-        title: "1. Soirée cinéma en plein air dans les jardins du château",
-        description: `Venez vivre une expérience unique avec nos soirées cinéma en plein air ! Le Château de la Napoule projette des classiques du cinéma sous les étoiles, dans un cadre enchanteur. Les spectateurs pourront également profiter de stands de snacks et boissons.
-            
-            📅 Prochaines dates : 12 juillet et 19 juillet 2025
-            🎬 Film à l'affiche : "La Belle et la Bête" de Jean Cocteau
-            💺 Places limitées, pensez à réserver
-        `
-    },
-    {
-        image: "link/Images/chateau_la_napoule.webp",
-        date: "Tous les vendredis soirs de juin à août 2025",
-        title: "2. Visites nocturnes : Le château sous un autre jour",
-        description: `Découvrez le Château de la Napoule dans une ambiance magique grâce à nos visites nocturnes. Plongés dans une atmosphère féerique, les visiteurs pourront explorer les salles et jardins éclairés par des bougies, tout en écoutant des récits historiques et des légendes locales.
-            
-            📅 Dates : Tous les vendredis soirs de juin à août 2025
-            🕰 Heure : 21h30
-            🎟 Réservation obligatoire
-        `
-    },
-    {
-        image: "link/Images/1200x680_sc_024-4469322.webp",
-        date: "Tous les mercredis après-midi",
-        title: "3. Ateliers créatifs pour enfants : Découverte de l'art médiéval",
-        description: `Le Château propose des ateliers pédagogiques et ludiques pour les enfants. Au programme : initiation à l'enluminure, création de blasons et découverte des techniques artistiques du Moyen Âge. Ces ateliers sont encadrés par des artistes et historiens spécialisés.
-            
-            📅 Tous les mercredis après-midi
-            🎨 Âge conseillé : 6 à 12 ans
-            📍 Lieu : Salle pédagogique du Château
-        `
-    }
-];
+const actualites = [...]; // Garder la définition de actualites
 
 function updateDetails(index) {
     const detailImg = document.getElementById("detail-img");
@@ -166,10 +121,8 @@ function updateDetails(index) {
     detailLabel5.innerText = actualite.description;
 }
 
-// Initialize with the first actualite
 updateDetails(0);
 
-// Close menu when a link is clicked
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         nav.classList.remove('active');
@@ -177,23 +130,17 @@ navLinks.forEach(link => {
     });
 });
 
-// Add smooth scrolling for anchor links
 const anchorLinks = document.querySelectorAll('a[href^="#"]');
 anchorLinks.forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
 
-// Form submission handling
 document.querySelector('.contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    // Add your form submission logic here
     console.log('Form submitted');
 });
-
-
