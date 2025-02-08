@@ -4,6 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Le DOM est complètement chargé !");
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("img").forEach(img => {
+        const src = img.getAttribute("src");
+        if (src) {
+            img.setAttribute("src", src + "?v=1.1");
+        }
+    });
+});
+
+
 // Test pour voir si Three.js est bien chargé
 if (THREE) {
     console.log("Three.js est bien chargé !");
@@ -176,3 +186,4 @@ function updateDetails(index) {
 }
 
 updateDetails(0);
+
