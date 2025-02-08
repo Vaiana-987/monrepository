@@ -58,6 +58,14 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('active');
 });
 
+// Ajout de l'événement pour fermer le menu lorsqu'un lien est cliqué
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        burger.classList.remove('active');
+    });
+});
+
 function openPopup(id, title, mediaUrl) {
     const popup = document.getElementById("popup");
     const popupTitle = document.getElementById("popup-title");
