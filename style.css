@@ -592,7 +592,8 @@ button:hover {
   height: 100vh;
   }
 
-  #actualite:not(.mobile-only) {
+
+  #actualites:not(.mobile-only) {
       display: none;
   }
   

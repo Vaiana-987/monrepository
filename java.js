@@ -10,9 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             img.setAttribute("src", src + "?v=1.1");
         }
     });
-
 });
-
 
 // Test pour voir si Three.js est bien chargé
 if (THREE) {
@@ -59,22 +57,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav-links');
-const navLinks = document.querySelectorAll('.nav-links a');
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links a');
 
-burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    burger.classList.toggle('active');
-});
-
-// Ajout de l'événement pour fermer le menu lorsqu'un lien est cliqué
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('active');
-        burger.classList.remove('active');
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        burger.classList.toggle('active');
     });
-});
+
+    // Ajout de l'événement pour fermer le menu lorsqu'un lien est cliqué
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            burger.classList.remove('active');
+        });
+    });
 
 function openPopup(id, title, mediaUrl) {
     const popup = document.getElementById("popup");
@@ -186,4 +184,3 @@ function updateDetails(index) {
 }
 
 updateDetails(0);
-
