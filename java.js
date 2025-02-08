@@ -2,15 +2,15 @@ console.log("Le fichier java.js est bien chargé !");
 
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Le DOM est complètement chargé !");
-});
-
-document.addEventListener("DOMContentLoaded", function () {
+    
+    // Appliquer ?v=1.1 aux images pour forcer la mise à jour du cache
     document.querySelectorAll("img").forEach(img => {
         const src = img.getAttribute("src");
-        if (src) {
+        if (src && !src.includes("?v=")) { // Vérifie pour éviter de dupliquer
             img.setAttribute("src", src + "?v=1.1");
         }
     });
+
 });
 
 
